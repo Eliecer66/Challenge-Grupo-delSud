@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="React%20App_files/css2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="React%20App_files/css2_003.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="React%20App_files/css2_002.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="defer" src="React%20App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: Maven Pro, Inter, Karla;
+}
+
+/* Nav bar all of the design's elements of the navbar are in this section */
+
+.nav--bar {
+    padding: 10px 40px 10px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav--bar--logo {
+    display: flex;
+}
+
+.logo {
+    width: 210px;
+}
+
+.nav--bar--items {
+    flex-basis: 57%;
+    padding: 16px;
+    font-size: 0.95em;
+    font-family: Maven Pro;
+    font-weight: 600;
+    color: #9E9E9E;
+}
+
+.nav--bar--items--list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav--bar--items--list li {
+    padding: 14px 5px;
+    border: 2px solid transparent;
+    display: inline;
+}
+
+.item--list:hover {
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid black;
+}
+
+.arrow {
+    margin: 3px 5px;
+    border: 1px solid #9E9E9E;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Section--1 */
+
+.intro--section {
+    display: flex;
+    justify-content: space-between;
+    background-color:#9E9E9E40;
+    padding: 120px 100px;
+}
+
+.intro--info {
+    flex-basis: 40%;
+}
+
+.intro--info h2 {
+    font-family: Karla;
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.intro--info h1 {
+    font-family: Karla;
+    font-size: 8.5em;
+    font-weight: 800;
+}
+
+.intro--bold--paragraph {
+    font-weight: 600;
+}
+
+.intro--info p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    letter-spacing: .3px;
+}
+
+.intro--image {
+    padding-top: 45px;
+    position: relative;
+
+}
+
+.play--icon {
+    position: absolute;
+    width: 205px;
+    top: 87px;
+    left: 143px;
+}
+.play--icon:hover {
+    filter: invert(14%) sepia(93%) saturate(7467%) hue-rotate(0deg) brightness(108%) contrast(112%);
+    cursor: pointer;
+}
+
+.laptop--image {
+    width: 500px;
+}
+
+/* Second section: Body section */
+/* first body section */
+
+.body--first--section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b1bab9;
+    padding: 120px 80px;
+}
+
+.item--body--descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item--body--descriptions img {
+    width: 130px;
+}
+
+.item--description {
+    padding: 10px;
+}
+
+.item--subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+/* Second body section */
+
+.second--section--image {
+    width: 100%;
+}
+
+/* Third body section */
+
+.body--third--section {
+    padding: 140px 100px;
+}
+
+.body--third--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #b1bab9;
+}
+
+.body--third--container--image {
+    flex-basis: 88%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 70px;
+}
+
+.plane--image {
+    width: 450px;
+}
+
+.body--third--container--description {
+    display: flex;
+    flex-direction: column;
+    font-family: Karla;
+    text-transform: uppercase;
+    padding-right: 45px;
+}
+
+.body--third--container--description > * {
+    padding-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.body--third--container--description > button {
+    width: 150px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+.button--style {
+    background-color: #000000;
+    color: #fafafac9;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Questions */
+
+.questions--section {
+    background-color: #9E9E9E40;
+    padding: 120px 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+.question--container--content {
+    margin-top: 80px;
+}
+.question{
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 70px 35px 11px;
+    list-style: none;
+    border-bottom: 2px solid #b1bab9;
+    cursor: pointer;
+}
+
+.arrow--questions {
+    left: 50px;
+    position: relative;
+    margin: 5px;
+    border: 3px solid #000000;
+    border-width: 0 1px 1px 0;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.drop--down--answer {
+    padding: 35px 110px 35px 11px;
+    font-size: .8em;
+    list-style: none;
+    line-height: 25px;
+    display: none;
+}
+
+/* User data */
+
+.user--data--section {
+    display: flex;
+    padding: 120px 100px;
+}
+
+.user--data--description {
+    border: 1px outset #9E9E9E40;
+    background-color: #9E9E9E40;
+    flex-basis: 41%;
+    padding: 40px;
+    font-size: 1.4em;
+}
+
+.user--data--description h2 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.user--data--form {
+    border: 12px solid red;
+    width: 100%;
+
+}
+
+.user--form {
+    display: flex;
+    padding: 70px;
+    width: 50%;
+}
+
+.user--form label {
+    font-size: 1.3em;
+}
+
+.user--form input {
+    border: none;
+    background-color: #9E9E9E40;
+    padding: 12px;
+    width: 350px;
+}
+
+.right--side {
+    padding: 3px 33px;
+}
+
+.right--side textarea {
+    height:120px;
+    resize: none;
+}
+
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLFNBQVM7SUFDVCxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxlQUFlO0lBQ2Ysb0NBQW9DO0FBQ3hDOztBQUVBLDJFQUEyRTs7QUFFM0U7SUFDSSw0QkFBNEI7SUFDNUIsYUFBYTtJQUNiLDhCQUE4QjtBQUNsQzs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGFBQWE7SUFDYixpQkFBaUI7SUFDakIsc0JBQXNCO0lBQ3RCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLDZCQUE2QjtJQUM3QixlQUFlO0FBQ25COztBQUVBO0lBQ0ksZUFBZTtJQUNmLGVBQWU7SUFDZiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLHlCQUF5QjtJQUN6QixxQkFBcUI7SUFDckIsWUFBWTtJQUNaLHdCQUF3QjtJQUN4QixnQ0FBZ0M7QUFDcEM7O0FBRUEsZUFBZTs7QUFFZjtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsMEJBQTBCO0lBQzFCLG9CQUFvQjtBQUN4Qjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSxpQkFBaUI7SUFDakIsa0JBQWtCOztBQUV0Qjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztJQUNULFdBQVc7QUFDZjtBQUNBO0lBQ0ksK0ZBQStGO0lBQy9GLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBLGlDQUFpQztBQUNqQyx1QkFBdUI7O0FBRXZCO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5Qix5QkFBeUI7SUFDekIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDOztBQUVBO0lBQ0ksWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGdCQUFnQjtBQUNwQjs7QUFFQSx3QkFBd0I7O0FBRXhCO0lBQ0ksV0FBVztBQUNmOztBQUVBLHVCQUF1Qjs7QUFFdkI7SUFDSSxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQiw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG9CQUFvQjtJQUNwQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLHFCQUFxQjtJQUNyQixlQUFlO0FBQ25COztBQUVBLGNBQWM7O0FBRWQ7SUFDSSwyQkFBMkI7SUFDM0IsbUJBQW1CO0lBQ25CLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFlBQVk7SUFDWixhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLDRCQUE0QjtJQUM1QixnQkFBZ0I7SUFDaEIsZ0NBQWdDO0lBQ2hDLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIseUJBQXlCO0lBQ3pCLGFBQWE7SUFDYix3QkFBd0I7SUFDeEIsZ0NBQWdDO0FBQ3BDOztBQUVBO0lBQ0ksNkJBQTZCO0lBQzdCLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLGFBQWE7QUFDakI7O0FBRUEsY0FBYzs7QUFFZDtJQUNJLGFBQWE7SUFDYixvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLGVBQWU7SUFDZixhQUFhO0lBQ2IsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLG9CQUFvQjtBQUN4QjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7O0FBRWY7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsYUFBYTtJQUNiLFVBQVU7QUFDZDs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLFlBQVk7SUFDWiwyQkFBMkI7SUFDM0IsYUFBYTtJQUNiLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIioge1xuICAgIHBhZGRpbmc6IDA7XG4gICAgbWFyZ2luOiAwO1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbmJvZHkge1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBmb250LWZhbWlseTogTWF2ZW4gUHJvLCBJbnRlciwgS2FybGE7XG59XG5cbi8qIE5hdiBiYXIgYWxsIG9mIHRoZSBkZXNpZ24ncyBlbGVtZW50cyBvZiB0aGUgbmF2YmFyIGFyZSBpbiB0aGlzIHNlY3Rpb24gKi9cblxuLm5hdi0tYmFyIHtcbiAgICBwYWRkaW5nOiAxMHB4IDQwcHggMTBweCA3MHB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuXG4ubmF2LS1iYXItLWxvZ28ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG59XG5cbi5sb2dvIHtcbiAgICB3aWR0aDogMjEwcHg7XG59XG5cbi5uYXYtLWJhci0taXRlbXMge1xuICAgIGZsZXgtYmFzaXM6IDU3JTtcbiAgICBwYWRkaW5nOiAxNnB4O1xuICAgIGZvbnQtc2l6ZTogMC45NWVtO1xuICAgIGZvbnQtZmFtaWx5OiBNYXZlbiBQcm87XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBjb2xvcjogIzlFOUU5RTtcbn1cblxuLm5hdi0tYmFyLS1pdGVtcy0tbGlzdCB7XG4gICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5uYXYtLWJhci0taXRlbXMtLWxpc3QgbGkge1xuICAgIHBhZGRpbmc6IDE0cHggNXB4O1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGRpc3BsYXk6IGlubGluZTtcbn1cblxuLml0ZW0tLWxpc3Q6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB0cmFuc2l0aW9uOiAuMnM7XG4gICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIGJsYWNrO1xufVxuXG4uYXJyb3cge1xuICAgIG1hcmdpbjogM3B4IDVweDtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjOUU5RTlFO1xuICAgIGJvcmRlci13aWR0aDogMCAzcHggM3B4IDA7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHBhZGRpbmc6IDJweDtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG5cbi8qIFNlY3Rpb24tLTEgKi9cblxuLmludHJvLS1zZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiM5RTlFOUU0MDtcbiAgICBwYWRkaW5nOiAxMjBweCAxMDBweDtcbn1cblxuLmludHJvLS1pbmZvIHtcbiAgICBmbGV4LWJhc2lzOiA0MCU7XG59XG5cbi5pbnRyby0taW5mbyBoMiB7XG4gICAgZm9udC1mYW1pbHk6IEthcmxhO1xuICAgIGZvbnQtc2l6ZTogMy41ZW07XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbn1cblxuLmludHJvLS1pbmZvIGgxIHtcbiAgICBmb250LWZhbWlseTogS2FybGE7XG4gICAgZm9udC1zaXplOiA4LjVlbTtcbiAgICBmb250LXdlaWdodDogODAwO1xufVxuXG4uaW50cm8tLWJvbGQtLXBhcmFncmFwaCB7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbn1cblxuLmludHJvLS1pbmZvIHAge1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgZm9udC1zaXplOiAxLjNlbTtcbiAgICBsZXR0ZXItc3BhY2luZzogLjNweDtcbn1cblxuLmludHJvLS1pbWFnZSB7XG4gICAgcGFkZGluZy10b3A6IDQ1cHg7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuXG59XG5cbi5wbGF5LS1pY29uIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDIwNXB4O1xuICAgIHRvcDogODdweDtcbiAgICBsZWZ0OiAxNDNweDtcbn1cbi5wbGF5LS1pY29uOmhvdmVyIHtcbiAgICBmaWx0ZXI6IGludmVydCgxNCUpIHNlcGlhKDkzJSkgc2F0dXJhdGUoNzQ2NyUpIGh1ZS1yb3RhdGUoMGRlZykgYnJpZ2h0bmVzcygxMDglKSBjb250cmFzdCgxMTIlKTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5sYXB0b3AtLWltYWdlIHtcbiAgICB3aWR0aDogNTAwcHg7XG59XG5cbi8qIFNlY29uZCBzZWN0aW9uOiBCb2R5IHNlY3Rpb24gKi9cbi8qIGZpcnN0IGJvZHkgc2VjdGlvbiAqL1xuXG4uYm9keS0tZmlyc3QtLXNlY3Rpb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNiMWJhYjk7XG4gICAgcGFkZGluZzogMTIwcHggODBweDtcbn1cblxuLml0ZW0tLWJvZHktLWRlc2NyaXB0aW9ucyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuXG4uaXRlbS0tYm9keS0tZGVzY3JpcHRpb25zIGltZyB7XG4gICAgd2lkdGg6IDEzMHB4O1xufVxuXG4uaXRlbS0tZGVzY3JpcHRpb24ge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5pdGVtLS1zdWJ0aXRsZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDEuOGVtO1xufVxuXG4vKiBTZWNvbmQgYm9keSBzZWN0aW9uICovXG5cbi5zZWNvbmQtLXNlY3Rpb24tLWltYWdlIHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLyogVGhpcmQgYm9keSBzZWN0aW9uICovXG5cbi5ib2R5LS10aGlyZC0tc2VjdGlvbiB7XG4gICAgcGFkZGluZzogMTQwcHggMTAwcHg7XG59XG5cbi5ib2R5LS10aGlyZC0tY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlci10b3A6IDRweCBzb2xpZCAjYjFiYWI5O1xufVxuXG4uYm9keS0tdGhpcmQtLWNvbnRhaW5lci0taW1hZ2Uge1xuICAgIGZsZXgtYmFzaXM6IDg4JTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIHBhZGRpbmc6IDEyMHB4IDcwcHg7XG59XG5cbi5wbGFuZS0taW1hZ2Uge1xuICAgIHdpZHRoOiA0NTBweDtcbn1cblxuLmJvZHktLXRoaXJkLS1jb250YWluZXItLWRlc2NyaXB0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgZm9udC1mYW1pbHk6IEthcmxhO1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgcGFkZGluZy1yaWdodDogNDVweDtcbn1cblxuLmJvZHktLXRoaXJkLS1jb250YWluZXItLWRlc2NyaXB0aW9uID4gKiB7XG4gICAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gICAgZm9udC1zaXplOiAxLjRlbTtcbn1cblxuLmJvZHktLXRoaXJkLS1jb250YWluZXItLWRlc2NyaXB0aW9uID4gYnV0dG9uIHtcbiAgICB3aWR0aDogMTUwcHg7XG4gICAgcGFkZGluZzogMTBweCAxNXB4O1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG5cbi5idXR0b24tLXN0eWxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwO1xuICAgIGNvbG9yOiAjZmFmYWZhYzk7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi8qIFF1ZXN0aW9ucyAqL1xuXG4ucXVlc3Rpb25zLS1zZWN0aW9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjOUU5RTlFNDA7XG4gICAgcGFkZGluZzogMTIwcHggODBweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmb250LXNpemU6IDEuM2VtO1xufVxuLnF1ZXN0aW9uLS1jb250YWluZXItLWNvbnRlbnQge1xuICAgIG1hcmdpbi10b3A6IDgwcHg7XG59XG4ucXVlc3Rpb257XG4gICAgd2lkdGg6IDc4MHB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDM1cHggNzBweCAzNXB4IDExcHg7XG4gICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgI2IxYmFiOTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5hcnJvdy0tcXVlc3Rpb25zIHtcbiAgICBsZWZ0OiA1MHB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBtYXJnaW46IDVweDtcbiAgICBib3JkZXI6IDNweCBzb2xpZCAjMDAwMDAwO1xuICAgIGJvcmRlci13aWR0aDogMCAxcHggMXB4IDA7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG5cbi5kcm9wLS1kb3duLS1hbnN3ZXIge1xuICAgIHBhZGRpbmc6IDM1cHggMTEwcHggMzVweCAxMXB4O1xuICAgIGZvbnQtc2l6ZTogLjhlbTtcbiAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgIGxpbmUtaGVpZ2h0OiAyNXB4O1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIFVzZXIgZGF0YSAqL1xuXG4udXNlci0tZGF0YS0tc2VjdGlvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwYWRkaW5nOiAxMjBweCAxMDBweDtcbn1cblxuLnVzZXItLWRhdGEtLWRlc2NyaXB0aW9uIHtcbiAgICBib3JkZXI6IDFweCBvdXRzZXQgIzlFOUU5RTQwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM5RTlFOUU0MDtcbiAgICBmbGV4LWJhc2lzOiA0MSU7XG4gICAgcGFkZGluZzogNDBweDtcbiAgICBmb250LXNpemU6IDEuNGVtO1xufVxuXG4udXNlci0tZGF0YS0tZGVzY3JpcHRpb24gaDIge1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG59XG4udXNlci0tZGF0YS0tZm9ybSB7XG4gICAgYm9yZGVyOiAxMnB4IHNvbGlkIHJlZDtcbiAgICB3aWR0aDogMTAwJTtcblxufVxuXG4udXNlci0tZm9ybSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwYWRkaW5nOiA3MHB4O1xuICAgIHdpZHRoOiA1MCU7XG59XG5cbi51c2VyLS1mb3JtIGxhYmVsIHtcbiAgICBmb250LXNpemU6IDEuM2VtO1xufVxuXG4udXNlci0tZm9ybSBpbnB1dCB7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM5RTlFOUU0MDtcbiAgICBwYWRkaW5nOiAxMnB4O1xuICAgIHdpZHRoOiAzNTBweDtcbn1cblxuLnJpZ2h0LS1zaWRlIHtcbiAgICBwYWRkaW5nOiAzcHggMzNweDtcbn1cblxuLnJpZ2h0LS1zaWRlIHRleHRhcmVhIHtcbiAgICBoZWlnaHQ6MTIwcHg7XG4gICAgcmVzaXplOiBub25lO1xufVxuXG5cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div id="app"><div class="nav--bar"><div class="nav--bar--logo"><img src="React%20App_files/logo.0227a985863ebf813613b0ce05a0a7dd.svg" alt="Logo" class="logo"></div><div class="nav--bar--items"><ul class="nav--bar--items--list"><li class="item--list">INICIO</li><li class="item--list">NOSOTROS</li><li class="item--list">VIVIENDA<i class="arrow"></i></li><li class="item--list">QUINCHOS</li><li class="item--list">PLAN E</li><li class="item--list">REALIDAD VIRTUAL</li><li class="item--list">CONTACTO</li></ul></div></div><div class="intro--section"><div class="intro--info"><h2>BIENVENIDO A</h2><h1>PLAN E</h1><p class="intro--bold--paragraph">Te invitamos a conocer la nueva herramienta financiera de Elemental Constructora.</p><p>Plan
+ E te da la posibilidad de ahorrar en metros cuadrados poniendo vos los 
+plazos y la cantidad de unidades que querés comprar, mientras tu 
+inversión crece por la actualización de valores.</p></div><div class="intro--image"><img src="React%20App_files/preview-laptop.d64fc0f57a32795bb8f1.png" alt="laptop display" class="laptop--image"><div class="play--icon"><img src="React%20App_files/play-icon.657945cfc283a85b09f17a8503746f28.svg"></div></div></div><div class="body--sections"><div class="body--first--section"><div class="item--body--descriptions"><img src="React%20App_files/simple_y_accesible_%25C3%25ADcono_fopqnm.cae1fe54a5d7415435f3fbe.svg"><div class="item--description"><p class="item--subtitle">SIMPLE Y ACCESIBLE</p><p class="item--description">Más inclusivo que el sistema tradicional.</p></div></div><div class="item--body--descriptions"><img src="React%20App_files/liquidez_inmediata_%25C3%25ADcono_zsofct.6efb5874b159e576314cc24.svg"><div class="item--description"><p class="item--subtitle">LIQUIDEZ INMEDIATA</p><p class="item--description">Ves tu capital crecer desde el inicio.</p></div></div><div class="item--body--descriptions"><img src="React%20App_files/flexible_%C3%ADcono_afucep.fa2af78f4bbda2d8e04190da28e61fe7.svg"><div class="item--description"><p class="item--subtitle">FLEXIBLE</p><p class="item--description">No te comprometes a pagar una cuota.</p></div></div></div><div class="body--second--section"><img class="second--section--image" src="React%20App_files/erra_bjguw5.7cf88523e6b5fa4c53f6.jpg"></div><div class="body--third--section"><div class="body--third--container"><div class="body--third--container--image"><img class="plane--image" src="React%20App_files/Gr%C3%A1fico_Plan_E_hajghl.14da18319d0ccb0c0f46.png"></div><div class="body--third--container--description"><h3>PLAN E</h3><h3>es una inversión simple, segura y rentable </h3><p>Que te genera liquidez inmediata sin condicionarte a ingresar dinero de manera constante.</p><p>Una
+ alternativa financiera para aquellos que tienen dificultades para 
+acceder a construir su casa propia, como así también para quienes ven al
+ ladrillo como un resguardo de valor para su capital.</p><button class="button--style">CONOCÉ MÁS</button></div></div></div></div><div class="questions--section"><div class="question--container--content"><ul class="question--list"><li class="question first--question">¿Por qué invertir en Plan E? ¿A quién está dirigido?<span class="arrow--questions"></span></li><ul class="drop--down--answer answerA"><li>El
+ sector inmobiliario es una industria en constante crecimiento y permite
+ un resguardo de valor para tu capital. Plan E está pensado para 
+aquellos que quieren construir su casa propia y no pueden acceder por la
+ línea de créditos tradicional, y también para quienes ven una 
+oportunidad de inversión en el ladrillo.</li></ul><li class="question second--question">¿Cómo funciona?<span class="arrow--questions"></span></li><ul class="drop--down--answer answerB"><li>El
+ usuario podrá comprar con un plan financiero a medida, unidades de un 
+metro cuadrado en adelante. Estas unidades podrán ser: canjeables por 
+una vivienda construible cuando haya llegado a un total de 60m2. 
+comercializadas con la empresa u otros usuarios.</li></ul><li class="question third--question">¿Cuál es el precio de un metro cuadrado?<span class="arrow--questions"></span></li><ul class="drop--down--answer answerC"><li>Los
+ valores del metro cuadrado están regidos por la APYMECO (Asociación de 
+Pymes de la Construcción de la Provincia de Buenos Aires) y pueden 
+consultarse en la plataforma de la misma.</li></ul><li class="question fourth--question">¿Desde qué momento puedo decidir vender mis m2?<span class="arrow--questions"></span></li><ul class="drop--down--answer answerD"><li>Cada
+ usuario es libre de tomar la decisión de vender sus m2 en el momento 
+que lo decida. Puede comercializarlos tanto con la empresa como con 
+otros particulares.</li></ul><li class="question fifth--question">¿Cuánto tiempo pasa hasta que recupere el dinero de mi inversión?<span class="arrow--questions"></span></li><ul class="drop--down--answer answerE"><li>Es
+ una inversión que genera líquidez inmediata, desde el primer momento. 
+En caso de no construir, se pueden comercializar los m2 con la empresa o
+ con otras personas.</li></ul></ul></div><div class="question--container--image"><img class="kitchen--image" src="React%20App_files/PF_o2qhsg.8a1074f68f6af78904d7.png"></div></div><div class="user--data--section"><div class="user--data--description"><h2>¿Querés recibir asesoramiento?</h2><p>Si tenés alguna consulta para hacernos sobre Plan E, no dudes en contactarnos. Con mucho gusto la responderemos.</p></div><div class="user--data--form"><form class="user--form"><div class="left--side"><label>Nombre</label><input type="text" name="name"><label>Email</label><input type="email" name="email"><label>Número</label><input type="number" name="telephone"></div><div class="right--side"><label>Mensaje</label><textarea name="comments"></textarea><button>Enviar</button></div></form></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
